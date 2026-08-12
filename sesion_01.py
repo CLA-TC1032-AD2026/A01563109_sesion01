@@ -1,4 +1,4 @@
-
+import random 
 
 def a_binario(n):
     if n <= 0 : 
@@ -47,17 +47,20 @@ def a_decimal (cadena, base):
 
 
     
+if __name__ == "__main__":
+    n = 156
+    print (n, 'En binario es: ', a_binario(n))
 
-    
-n = 156
-print (n, 'En binario es: ', a_binario(n))
+    print ('Comprobación de la conversión:: ', bin(n))
 
-print ('Comprobación de la conversión:: ', bin(n))
+    print (n, 'En hexadecimal es: ', a_hexadecimal(n))
 
-print (n, 'En hexadecimal es: ', a_hexadecimal(n))
+    print ('Comprobación de la conversión:: ', hex(n))
 
-print ('Comprobación de la conversión:: ', hex(n))
+    print ('Conversión a decimal de 10011100 con base 2::::  ' , a_decimal("10011100",2))
+    print ('Conversión a decimal de 10 con base 8::::  ', a_decimal("10", 8))
+    print ('Conversión de 1101 con base 4::::  ', a_decimal("1101", 4))
 
-print ('Conversión a decimal de 10011100 con base 2::::  ' , a_decimal("10011100",2))
-print ('Conversión a decimal de 10 con base 8::::  ', a_decimal("10", 8))
-print ('Conversión de 1101 con base 4::::  ', a_decimal("1101", 4))
+    print(__name__)
+    print(random.__name__)
+
