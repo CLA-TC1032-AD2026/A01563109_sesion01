@@ -58,4 +58,6 @@ print (n, 'En hexadecimal es: ', a_hexadecimal(n))
 
 print ('Comprobación de la conversión:: ', hex(n))
 
-print ('prueba: ' , a_decimal("10011100",2))
+print ('Conversión a decimal de 10011100 con base 2::::  ' , a_decimal("10011100",2))
+print ('Conversión a decimal de 10 con base 8::::  ', a_decimal("10", 8))
+print ('Conversión de 1101 con base 4::::  ', a_decimal("1101", 4))
