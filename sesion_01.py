@@ -35,7 +35,18 @@ def a_hexadecimal(n):
     return hexa
 
 def a_decimal (cadena, base):
-    cadena = 
+    inv = reversed (cadena)
+    count = 0
+    r =0
+    for i in inv:
+        i = int(i)
+        num = (base**(count))*i
+        count += 1
+        r += num
+    return r
+
+
+    
 
     
 n = 156
@@ -46,3 +57,5 @@ print ('Comprobación de la conversión:: ', bin(n))
 print (n, 'En hexadecimal es: ', a_hexadecimal(n))
 
 print ('Comprobación de la conversión:: ', hex(n))
+
+print ('prueba: ' , a_decimal("10011100",2))
